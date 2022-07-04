@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="Photessera:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Photessera_jar</output-path>
+  <artifact type="jar" name="SketchIt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SketchIt_jar</output-path>
     <root id="archive" name="Photessera.jar">
-      <element id="module-output" name="Photessera" />
+      <element id="module-output" name="SketchIt" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-android-x86_64.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-android-arm.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4.1/librealsense-1.12.1-1.4.1.jar" path-in-jar="/" />

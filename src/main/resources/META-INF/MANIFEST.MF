@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: influencetheworld.photessera.App
+Main-Class: app.sketchit.SketchItApp
 

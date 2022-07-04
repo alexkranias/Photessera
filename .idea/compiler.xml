@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Photessera" />
+        <module name="photessera" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="Photessera" target="8" />
+      <module name="photessera" target="8" />
+      <module name="SketchIt" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

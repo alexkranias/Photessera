@@ -1,5 +1,7 @@
-package influencetheworld.photessera;
+package app.sketchit;
 
+import influencetheworld.photessera.FrameRender;
+import influencetheworld.photessera.ProgressBox;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -25,7 +27,7 @@ import java.util.List;
  * main window that allows the user to choose the various options and settings
  * associated with the image or video they are rendering.
  */
-public class App2 extends Application {
+public class SketchItApp extends Application {
 
     private Desktop desktop = Desktop.getDesktop();
     private FileChooser fileChooser = new FileChooser();
@@ -198,12 +200,12 @@ public class App2 extends Application {
             scaleFactor = Integer.parseInt(scaleFactorField.getText());
             exportFileName = exportFileNameField.getText();
 
-            FrameRender2.photoPixels = null;
-            FrameRender2.pixelPhotoAddresses = null;
+            FrameRender.photoPixels = null;
+            FrameRender.pixelPhotoAddresses = null;
 
             if (selectedPhotoPixelFiles.size() > 0 && fileAddress != null && scaleFactor > 0 && !exportFileName.equals("") && exportFolderAddress != null) {
                 try {
-                    new FrameRender2(fileAddress, scaleFactor, width, height, exportFileName, exportFolderAddress, selectedPhotoPixelFiles);
+                    new FrameRender(fileAddress, scaleFactor, width, height, exportFileName, exportFolderAddress, selectedPhotoPixelFiles);
                 } catch (IOException ioException) {
                     ioException.printStackTrace();
                 }
@@ -215,7 +217,7 @@ public class App2 extends Application {
         Scene main = new Scene(grid, 1050, 430);
 
         //Label for Info Scene
-        String text = "Photessera\nVersion: 1.0.0\nRelease: 08/18/2020\nCreated by Alex Kranias\n\nPhotessera was made to give people the opportunity to explore the artisitic potential of creating photo and video mosaics using images. Have you ever considered creating a self-portrait constructed out of images of yourself? Well Photessera gives you that capability, and so much more. It's time to become the creator you always have been.\n\nMessage your creations to @photessera on Instagram to potentially be featured!\n\nSUPPORTED FILE TYPES    -    VIDEO: MP4, MOV    PHOTO: PNG, JPG";
+        String text = "Photessera\nInfluence The World™\nVersion: 1.0.0\nRelease: 08/18/2020\nCreated by Alex Kranias\n\nPhotessera was made to give people the opportunity to explore the artisitic potential of creating photo and video composites of a selection of images. Have you ever considered creating a self-portrait constructed out of images of yourself? Well Photessera gives you that capability, and so much more. It's time to become the creator you always have been.\n\nMessage your creations to @photessera on Instagram to potentially be featured!\n\nSUPPORTED FILE TYPES    -    VIDEO: MP4, MOV    PHOTO: PNG, JPG";
         Label message = new Label(text);
         message.setTextAlignment(TextAlignment.CENTER);
         message.setWrapText(true);
